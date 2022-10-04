@@ -1,0 +1,64 @@
+body {
+  background-color: #212121;
+  color: #ffffff;
+}
+
+.app {
+  min-width: 99vw;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 16px;
+}
+
+.score:last-child {
+  margin-right: 32px;
+}
+
+.win {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 1000;
+  padding-bottom: 16px;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#cardContainer {
+  width: 450px;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, auto);
+}
+
+.cards {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  height: 100px;
+  width: 100px;
+}
+
+@media (max-width: 800px) {
+  .game {
+    padding-top: 0;
+  }
+  #cardContainer {
+    grid-template-columns: repeat(3, auto);
+    width: 350px;
+  }
+  .cards {
+    height: 80px;
+  }
+}
